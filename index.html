@@ -3,42 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
 </head>
 <body>
-
     <header>
-        <nav>
-            <h2>Portfolio</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1><b>Lithika L G</b></h1>
+        <p>B.E Computer Science and Engineering Student</p>
     </header>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#education">Education</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    <hr>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
 
-    <section class="hero">
-        <h1>Hello, I'm Lithika L.G</h1>
-        <h2>Frontend Development Intern</h2>
-        <p>Computer Science Engineering Student passionate about Web Development.</p>
-        <button>Contact Me</button>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            <li>I am Lithika L.G, a Computer Science Engineering student.</li>
-            <li>I am currently learning HTML, CSS, JavaScript, Git, and GitHub.</li>
-            <li>My goal is to become a Full Stack Developer by building real-world projects.</li>
-        </p>
-    </section>
-
+<img src="images/profile.jpeg" alt="Profile Photo" width="200">
+    <h1>
+    <p>Welcome to my personal portfolio website.</p>
+    <p>I am passionate about web development and programming.</p>
+    </h1>
+        </section>
+        <hr>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Lithika L.G, a Computer Science and Engineering
+                student interested in Web Development, Programming,
+                Artificial Intelligence, and Software Development.
+            </p>
+        </section>
+        <hr>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>C Programming</li>
+                <li>Java</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.E COMPUTER SCIENCE AND ENGINEERING</td>
+                    <td>ST.XAVIER'S CATHOLIC COLLEGE OF ENGINEERING</td>
+                    <td>2024 - 2028</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary</td>
+                    <td>BETHANY NAVAJEEVAN MATRIC HIGHER SECONDARY SCHOOL</td>
+                    <td>2024</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Name:</label><br>
+                <input type="text" placeholder="LITHIKA L G"><br><br>
+                <label>Email:</label><br>
+                <input type="email" placeholder="lithikalg3@gmail.com"><br><br>
+                <label>Phone:</label><br>
+                <input type="tel" placeholder="Enter your phone number"><br><br>
+                <label>Message:</label><br>
+                <textarea rows="5" cols="35" placeholder="Write your message"></textarea><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+    <hr>
     <footer>
-        <p>© 2026 Lithika L.G | Portfolio Website</p>
+        <p>&copy; 2026 Lithika L.G. All Rights Reserved.</p>
+        <p>Email: lithikalg3@gmail.com</p>
     </footer>
-
 </body>
 </html>
