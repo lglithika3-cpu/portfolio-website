@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <CENTER>
     <header>
-        <h1><b>Lithika L G</b></h1>
-        <p>B.E Computer Science and Engineering Student</p>
+        <h1>LITHIKA L G</h1>
+        <p>B.E COMPUTER SCIENCE AND ENGINEERING STUDENT </p>
     </header>
     <nav>
-        <a href="#home">Home</a> |
-        <a href="#about">About</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#education">Education</a> |
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
-    <hr>
     <main>
-        <section id="home">
-            <h2>Home</h2>
-
-<img src="images/profile.jpeg" alt="Profile Photo" width="200">
-    <h1>
-    <p>Welcome to my personal portfolio website.</p>
-    <p>I am passionate about web development and programming.</p>
-    </h1>
+        <section id="home" class="hero">
+            <img src="images/profile.jpeg" alt="Profile Photo" class="profile">
+            <h2>Hello, I'm Lithika L G</h2>
+            <p>
+                Welcome to my personal portfolio website.
+            </p>
+            <p>
+                I am passionate about Web Development, Programming, Artificial Intelligence and Software Development.
+            </p>
         </section>
-        <hr>
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Hello! I am Lithika L.G, a Computer Science and Engineering
-                student interested in Web Development, Programming,
-                Artificial Intelligence, and Software Development.
+                <ul>
+                <li>Hello! I am Lithika L G, a Computer Science and Engineering student currently pursuing my B.E degree.</li>
+                <li>I enjoy learning modern web technologies and continuously improving my programming skills. My goal is to become a skilled software developer and contribute to innovative technology solutions.</li>
+                </ul>
             </p>
         </section>
-        <hr>
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>HTML</li>
+                <li>HTML5</li>
                 <li>CSS</li>
                 <li>Python</li>
                 <li>C Programming</li>
@@ -50,48 +50,77 @@
                 <li>Git & GitHub</li>
             </ul>
         </section>
-        <hr>
         <section id="education">
             <h2>Education</h2>
-            <table border="1" cellpadding="8">
+            <table>
                 <tr>
                     <th>Qualification</th>
                     <th>Institution</th>
                     <th>Year</th>
                 </tr>
                 <tr>
-                    <td>B.E COMPUTER SCIENCE AND ENGINEERING</td>
-                    <td>ST.XAVIER'S CATHOLIC COLLEGE OF ENGINEERING</td>
+                    <td>B.E COMPUTER SCIENCE AND ENGINEERING </td>
+                    <td>St. XAVIER'S CATHOLIC COLLEGE OF ENGINEERING</td>
                     <td>2024 - 2028</td>
                 </tr>
                 <tr>
-                    <td>Higher Secondary</td>
+                    <td>HIGHER SECONDARY</td>
                     <td>BETHANY NAVAJEEVAN MATRIC HIGHER SECONDARY SCHOOL</td>
                     <td>2024</td>
                 </tr>
             </table>
         </section>
-        <hr>
         <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label>Name:</label><br>
-                <input type="text" placeholder="LITHIKA L G"><br><br>
-                <label>Email:</label><br>
-                <input type="email" placeholder="lithikalg3@gmail.com"><br><br>
-                <label>Phone:</label><br>
-                <input type="tel" placeholder="Enter your phone number"><br><br>
-                <label>Message:</label><br>
-                <textarea rows="5" cols="35" placeholder="Write your message"></textarea><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
+             <h2>Contact Me</h2>
+             <form>
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="L G LITHIKA"
+                    required
+                >
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="lithikalg3@gmail.com"
+                    required
+                >
+                <label for="phone">Phone</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    placeholder="Write your message"
+                    rows="5"
+                    required
+                ></textarea>
+                <div class="buttons">
+                    <input
+                        type="submit"
+                        value="Send"
+                        class="btn"
+                    >
+                    <input
+                        type="reset"
+                        value="Reset"
+                        class="btn"
+                    >
+                </div>
             </form>
         </section>
     </main>
-    <hr>
     <footer>
-        <p>&copy; 2026 Lithika L.G. All Rights Reserved.</p>
+        <p>&copy; 2026 Lithika L G. All Rights Reserved.</p>
         <p>Email: lithikalg3@gmail.com</p>
     </footer>
+    </body>
+</CENTER>
 </body>
 </html>
