@@ -3,47 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>LITHIKA L G | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>LITHIKA L G</h1>
-        <p>B.E COMPUTER SCIENCE AND ENGINEERING STUDENT</p>
+        <h1 id="heading">LITHIKA L G</h1>
+        <p>B.E. COMPUTER SCIENCE AND ENGINEERING STUDENT</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="home" class="hero">
-        <img src="images/profile1.jpeg" alt="Profile Photo">
-        <h2>WELCOME TO MY PORTFOLIO</h2>
+    <section id="home">
+        <h2>Welcome</h2>
+        <img src="images/Profile2.jpeg" alt="Profile Photo" width="200">
         <p>
-            Hello! I am <STRONG> L G LITHIKA</STRONG>, a Computer Science and Engineering
-            student passionate about Web Development, Frontend Design,
-            and Full Stack Development.
+            Hello! I am <strong>LITHIKA L G</strong>, a Computer Science and Engineering student
+            passionate about web development and programming.
         </p>
-        <a href="#contact">
-            <button>Contact Me</button>
-        </a>
+        <button id="welcomeBtn">Click Me</button>
+        <button id="changeColor">Change Background</button>
+        <button id="changeText">Change Heading</button>
     </section>
     <section id="about">
         <h2>About Me</h2>
         <p>
-            <ul>
-            <li>I am currently pursuing a Bachelor of Engineering in Computer
-            Science and Engineering.</li>
-            <li>I enjoy learning HTML, CSS,
-            JavaScript, Python, and building responsive websites.</li>
-            <li>I continuously improve my technical skills through projects
-            and internships.</li>
-            </ul>
+            I am interested in HTML, CSS, JavaScript and Python.
+            I enjoy building responsive and user-friendly websites.
         </p>
     </section>
     <section id="skills">
@@ -51,7 +41,6 @@
         <ul>
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>Responsive Web Design</li>
             <li>JavaScript</li>
             <li>Python</li>
             <li>Git & GitHub</li>
@@ -59,51 +48,32 @@
     </section>
     <section id="education">
         <h2>Education</h2>
-        <h3>B.E COMPUTER SCIENCE AND ENGINEERING</h3>
-        <p>
-            St. XAVIER'S CATHOLIC COLLEGE OF ENGINEERING
-        </p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>PORTFOLIO WEBSITE</h3>
-            <p>
-                Developed a responsive personal portfolio website
-                using HTML and CSS.
-            </p>
-        </div>
-        <div class="project-card">
-            <h3>ONLINE LEARNING PLATFORM</h3>
-            <p>
-                Designed an educational website with HTML, CSS
-                and JavaScript.
-            </p>
-        </div>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>B.E CSE</td>
+                <td>St. XAVIER'S CATHOLIC COLLEGE OF ENGINEERING</td>
+                <td>2024-2028</td>
+            </tr>
+        </table>
     </section>
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <form>
-            <input
-                type="text"
-                placeholder="Enter your Name"
-                required>
-            <input
-                type="email"
-                placeholder="Enter your Email"
-                required>
-            <textarea
-                rows="5"
-                placeholder="Enter your Message"
-                required></textarea>
-            <button type="submit">
-                Send Message
-            </button>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
         </form>
+    </section>
     <footer>
-        <p>
-            © 2026 Lithika L G | All Rights Reserved
-        </p>
+        <p>© 2026 Lithika L G. All Rights Reserved.</p>
     </footer>
+    <button id="topBtn">↑</button>
+    <script src="script.js"></script>
 </body>
 </html>
