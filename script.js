@@ -1,23 +1,25 @@
-document.getElementById("welcomeBtn").addEventListener("click", function () {
-    alert("WELCOME TO MY PORTFOLIO!");
-});
-document.getElementById("changeColor").addEventListener("click", function () {
-    document.body.style.backgroundColor = "#e8f4ff";
-});
-document.getElementById("changeText").addEventListener("click", function () {
-    document.getElementById("heading").innerHTML = "WELCOME TO MY PORTFOLIO";
-});
-let topButton = document.getElementById("topBtn");
-window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        topButton.style.display = "block";
-    } else {
-        topButton.style.display = "none";
-    }
-};
-topButton.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
+document.getElementById("scrollBtn").addEventListener("click", function () {
+    document.getElementById("projects").scrollIntoView({
         behavior: "smooth"
     });
 });
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modalTitle");
+const modalDescription = document.getElementById("modalDescription");
+const closeBtn = document.getElementById("close");
+const buttons = document.querySelectorAll(".details-btn");
+buttons.forEach(function(button){
+    button.addEventListener("click", function(){
+        modal.style.display = "block";
+        modalTitle.innerText = this.dataset.title;
+        modalDescription.innerText = this.dataset.description;
+    });
+});
+closeBtn.onclick = function(){
+    modal.style.display = "none";
+}
+window.onclick = function(event){
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}

@@ -3,77 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LITHIKA L G | Portfolio</title>
+    <title>Portfolio - Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="heading">LITHIKA L G</h1>
-        <p>B.E. COMPUTER SCIENCE AND ENGINEERING STUDENT</p>
+        <h1>MY PORTFOLIO</h1>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section id="home">
-        <h2>Welcome</h2>
-        <img src="images/Profile2.jpeg" alt="Profile Photo" width="200">
-        <p>
-            Hello! I am <strong>LITHIKA L G</strong>, a Computer Science and Engineering student
-            passionate about web development and programming.
-        </p>
-        <button id="welcomeBtn">Click Me</button>
-        <button id="changeColor">Change Background</button>
-        <button id="changeText">Change Heading</button>
+    <section class="hero">
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+        <p>Explore some of my featured projects.</p>
+        <button id="scrollBtn">
+            View Projects
+        </button>
     </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am interested in HTML, CSS, JavaScript and Python.
-            I enjoy building responsive and user-friendly websites.
-        </p>
+    <section id="projects">
+        <h2 class="title">MY PROJECTS</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/Profile2.jpeg" alt="Portfolio Website">
+                <h3>PORTFOLIO WEBSITE</h3>
+                <p>
+                    A responsive personal portfolio website built using
+                    HTML, CSS and JavaScript.
+                </p>
+                <button
+                    class="details-btn"
+                    data-title="Portfolio Website"
+                    data-description="This portfolio showcases my skills, education, achievements and projects using responsive web design.">
+                    View Details
+                </button>
+            </div>
+            <div class="project-card">
+                <img src="images/Online.jpeg" alt="Online Learning Platform">
+                <h3>ONLINE LEARNING PLATFORM</h3>
+                <p>
+                    A simple e-learning platform with responsive layouts
+                    and course pages.
+                </p>
+                <button
+                    class="details-btn"
+                    data-title="Online Learning Platform"
+                    data-description="An educational website that provides course information, navigation, responsive pages and user-friendly design.">
+                    View Details
+                </button>
+            </div>
+            <div class="project-card">
+                <img src="images/student.jpeg" alt="Student Management System">
+                <h3>STUDENT MANAGEMENT SYSTEM</h3>
+                <p>
+                    Student information management application using
+                    HTML, CSS and JavaScript.
+                </p>
+                <button
+                    class="details-btn"
+                    data-title="Student Management System"
+                    data-description="A basic student record management project that stores and displays student details with an interactive interface.">
+                    View Details
+                <button>
+            </div>
+        </div>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <table>
-            <tr>
-                <th>Course</th>
-                <th>Institution</th>
-                <th>Year</th>
-            </tr>
-            <tr>
-                <td>B.E CSE</td>
-                <td>St. XAVIER'S CATHOLIC COLLEGE OF ENGINEERING</td>
-                <td>2024-2028</td>
-            </tr>
-        </table>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>© 2026 Lithika L G. All Rights Reserved.</p>
-    </footer>
-    <button id="topBtn">↑</button>
+    <div id="modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
