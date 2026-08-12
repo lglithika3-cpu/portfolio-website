@@ -1,4 +1,16 @@
+const menuBtn=document.getElementById("menuBtn");
+const navLinks=document.getElementById("navLinks");
 const scrollBtn=document.getElementById("scrollBtn");
+const contactForm=document.getElementById("contactForm");
+const formMessage=document.getElementById("formMessage");
+menuBtn.addEventListener("click",()=>{
+navLinks.classList.toggle("active");
+});
+document.querySelectorAll(".nav-links a").forEach(link=>{
+link.addEventListener("click",()=>{
+navLinks.classList.remove("active");
+});
+});
 window.addEventListener("scroll",()=>{
 if(window.scrollY>300){
 scrollBtn.style.display="block";
@@ -12,37 +24,20 @@ top:0,
 behavior:"smooth"
 });
 });
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-link.addEventListener("click",event=>{
-const target=document.querySelector(link.getAttribute("href"));
-if(target){
+contactForm.addEventListener("submit",(event)=>{
 event.preventDefault();
-target.scrollIntoView({
-behavior:"smooth"
-});
+const name=document.getElementById("name").value.trim();
+const email=document.getElementById("email").value.trim();
+const message=document.getElementById("message").value.trim();
+if(name===""||email===""||message===""){
+formMessage.textContent="Please fill in all fields.";
+return;
 }
-});
-});
-const cards=document.querySelectorAll(".skill-card,.project-card,.education-card");
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.style.opacity="1";
-entry.target.style.transform="translateY(0)";
+const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!emailPattern.test(email)){
+formMessage.textContent="Please enter a valid email address.";
+return;
 }
-});
-},{threshold:0.15});
-cards.forEach(card=>{
-card.style.opacity="0";
-card.style.transform="translateY(40px)";
-card.style.transition="opacity .7s ease,transform .7s ease";
-observer.observe(card);
-});
-const contactForm=document.getElementById("contactForm");
-const formMessage=document.getElementById("formMessage");
-contactForm.addEventListener("submit",event=>{
-event.preventDefault();
-formMessage.textContent="Thank you! Your message has been submitted successfully.";
-formMessage.style.color="#910b5b";
+formMessage.textContent="Thank you! Your message has been validated successfully.";
 contactForm.reset();
 });
