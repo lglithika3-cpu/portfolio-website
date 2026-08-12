@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>LITHIKA L G | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
 <nav class="navbar">
-<div class="logo">LITHIKA L G</div>
+<h2 class="logo">LITHIKA L G</h2>
 <ul class="nav-links">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -23,101 +23,136 @@
 <main>
 <section id="home" class="hero">
 <div class="hero-content">
-<h1>Hello, I'm LITHIKA L G</h1>
+<p class="welcome">WELCOME TO MY PORTFOLIO</p>
+<h1>Hi, I'm <span>Lithika L G</span></h1>
 <h2>B.E Computer Science and Engineering Student</h2>
-<p>Passionate about web development, programming and creating useful digital solutions.</p>
-<a href="#contact" class="hero-btn">Contact Me</a>
+<p>I am passionate about web development, programming and creating meaningful digital experiences.</p>
+<div class="hero-buttons">
+<a href="#projects" class="btn">View Projects</a>
+<a href="#contact" class="btn secondary-btn">Contact Me</a>
+</div>
+</div>
+<div class="hero-image">
+<img src="images/profile.jpeg" alt="Lithika L G">
 </div>
 </section>
 <section id="about" class="section">
+<div class="section-title">
 <h2>About Me</h2>
-<div class="about-container">
-<img src="images/profile.jpeg" alt="LITHIKA L G Profile Photo">
-<div>
-<p>I am a Computer Science and Engineering student interested in software development, web technologies and problem solving.</p>
-<p>I enjoy learning new technologies and developing projects that provide practical solutions to real-world problems.</p>
+<span></span>
 </div>
+<div class="about-content">
+<p>I am a B.E Computer Science and Engineering student interested in software development and modern web technologies.</p>
+<p>I enjoy learning new technologies, developing projects and improving my programming skills through practical experience.</p>
 </div>
 </section>
-<section id="skills" class="section">
-<h2>Skills</h2>
+<section id="skills" class="section skills-section">
+<div class="section-title">
+<h2>My Skills</h2>
+<span></span>
+</div>
 <div class="skills-container">
-<div class="skill-card">HTML</div>
-<div class="skill-card">CSS</div>
-<div class="skill-card">JavaScript</div>
-<div class="skill-card">Python</div>
-<div class="skill-card">Java</div>
-<div class="skill-card">Git & GitHub</div>
+<div class="skill-card">
+<h3>HTML</h3>
+<p>Creating structured and semantic web pages.</p>
+</div>
+<div class="skill-card">
+<h3>CSS</h3>
+<p>Designing responsive and attractive interfaces.</p>
+</div>
+<div class="skill-card">
+<h3>JavaScript</h3>
+<p>Adding interactive features to websites.</p>
+</div>
+<div class="skill-card">
+<h3>Python</h3>
+<p>Building applications and solving programming problems.</p>
+</div>
+<div class="skill-card">
+<h3>Java</h3>
+<p>Developing object-oriented applications.</p>
+</div>
+<div class="skill-card">
+<h3>Git & GitHub</h3>
+<p>Managing and sharing software projects.</p>
+</div>
 </div>
 </section>
 <section id="education" class="section">
+<div class="section-title">
 <h2>Education</h2>
+<span></span>
+</div>
 <div class="education-card">
 <h3>B.E Computer Science and Engineering</h3>
 <p>St. Xavier's Catholic College of Engineering</p>
+<p>Currently pursuing undergraduate studies in Computer Science and Engineering.</p>
 </div>
 </section>
-<section id="projects" class="section">
-<h2>Projects</h2>
+<section id="projects" class="section projects-section">
+<div class="section-title">
+<h2>My Projects</h2>
+<span></span>
+</div>
 <div class="projects-container">
 <div class="project-card">
+<div class="project-icon">01</div>
 <h3>Online Learning Platform</h3>
-<p>A web-based learning platform designed using HTML, CSS and JavaScript to provide an organized learning experience.</p>
+<p>A web-based learning platform designed to provide an organized environment for accessing learning content.</p>
+<a href="#" class="project-btn">View Project</a>
 </div>
 <div class="project-card">
+<div class="project-icon">02</div>
 <h3>SafeMesh</h3>
-<p>An emergency safety application designed to help users send SOS alerts and share their location during emergencies.</p>
+<p>An emergency safety application designed to help users send SOS alerts and location information.</p>
+<a href="#" class="project-btn">View Project</a>
 </div>
 <div class="project-card">
+<div class="project-icon">03</div>
 <h3>Portfolio Website</h3>
-<p>A responsive personal portfolio website developed to showcase my skills, education, projects and contact information.</p>
+<p>A responsive personal portfolio website showcasing my profile, skills, education and projects.</p>
+<a href="#" class="project-btn">View Project</a>
 </div>
 </div>
 </section>
 <section id="contact" class="section contact-section">
+<div class="section-title">
 <h2>Contact Me</h2>
-<p class="contact-intro">Have a project idea, opportunity or question? Feel free to get in touch with me.</p>
+<span></span>
+</div>
 <div class="contact-container">
 <div class="contact-info">
 <h3>Let's Connect</h3>
-<p>I am always interested in learning, collaborating and exploring new opportunities in technology.</p>
+<p>Have a project idea or want to connect? Send me a message through the form.</p>
+<p>Email: lglithika3@gmail.com</p>
 <div class="social-links">
-<a href="mailto:lglithika3@gmail.com">Email</a>
-<a href="https://www.linkedin.com/in/lithika-leyones-994b14399?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
-<a href="https://github.com/lglithika3-cpu/portfolio-website" target="_blank">GitHub</a>
+<a href="#" target="_blank">LinkedIn</a>
+<a href="#" target="_blank">GitHub</a>
 </div>
 </div>
 <form id="contactForm">
 <div class="form-group">
 <label for="name">Name</label>
-<input type="text" id="name" name="name" placeholder="Enter your name">
-<small id="nameError"></small>
+<input type="text" id="name" placeholder="Enter your name">
 </div>
 <div class="form-group">
 <label for="email">Email</label>
-<input type="email" id="email" name="email" placeholder="Enter your email">
-<small id="emailError"></small>
-</div>
-<div class="form-group">
-<label for="subject">Subject</label>
-<input type="text" id="subject" name="subject" placeholder="Enter subject">
-<small id="subjectError"></small>
+<input type="email" id="email" placeholder="Enter your email">
 </div>
 <div class="form-group">
 <label for="message">Message</label>
-<textarea id="message" name="message" rows="6" placeholder="Enter your message"></textarea>
-<small id="messageError"></small>
+<textarea id="message" rows="5" placeholder="Enter your message"></textarea>
 </div>
-<button type="submit">Send Message</button>
-<p id="successMessage"></p>
+<button type="submit" class="btn">Send Message</button>
+<p id="formMessage"></p>
 </form>
 </div>
 </section>
 </main>
 <footer>
-<p>&copy; 2026 Lithika L G. All Rights Reserved.</p>
+<p>© 2026 Lithika L G. All Rights Reserved.</p>
 </footer>
-<button id="scrollBtn">↑</button>
+<button id="scrollBtn" title="Go to top">↑</button>
 <script src="script.js"></script>
 </body>
 </html>
