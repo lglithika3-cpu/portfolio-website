@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 
 <html lang="en">
 
@@ -356,4 +357,89 @@
 
 </body>
 
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MY PORTFOLIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+        <p>Explore some of my featured projects.</p>
+        <button id="scrollBtn">
+            View Projects
+        </button>
+    </section>
+    <section id="projects">
+        <h2 class="title">MY PROJECTS</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/Profile2.jpeg" alt="Portfolio Website">
+                <h3>PORTFOLIO WEBSITE</h3>
+                <p>
+                    A responsive personal portfolio website built using
+                    HTML, CSS and JavaScript.
+                </p>
+                <button
+                    class="details-btn"
+                    data-title="Portfolio Website"
+                    data-description="This portfolio showcases my skills, education, achievements and projects using responsive web design.">
+                    View Details
+                </button>
+            </div>
+            <div class="project-card">
+                <img src="images/Online.jpeg" alt="Online Learning Platform">
+                <h3>ONLINE LEARNING PLATFORM</h3>
+                <p>
+                    A simple e-learning platform with responsive layouts
+                    and course pages.
+                </p>
+                <button
+                    class="details-btn"
+                    data-title="Online Learning Platform"
+                    data-description="An educational website that provides course information, navigation, responsive pages and user-friendly design.">
+                    View Details
+                </button>
+            </div>
+            <div class="project-card">
+                <img src="images/student.jpeg" alt="Student Management System">
+                <h3>STUDENT MANAGEMENT SYSTEM</h3>
+                <p>
+                    Student information management application using
+                    HTML, CSS and JavaScript.
+                </p>
+                <button
+                    class="details-btn"
+                    data-title="Student Management System"
+                    data-description="A basic student record management project that stores and displays student details with an interactive interface.">
+                    View Details
+                <button>
+            </div>
+        </div>
+    </section>
+    <div id="modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+>>>>>>> e3a8e4a2bf47888d949602bbffc6e11ce54b98fc
 </html>
