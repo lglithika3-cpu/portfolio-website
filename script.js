@@ -41,3 +41,5 @@ return;
 formMessage.textContent="Thank you! Your message has been validated successfully.";
 contactForm.reset();
 });
+document.getElementById("year").textContent =
+new Date().getFullYear();
