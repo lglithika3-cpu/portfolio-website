@@ -1,28 +1,41 @@
-Hi, I'm LITHIKA L.G 
- III Year CSE Student at St. Xavier's Catholic College of Engineering
+# Lithika L G - Personal Portfolio
 
-💻 Aspiring Front-End Developer
-       Currently learning:
-        - HTML
-        - CSS
-        - JavaScript
-        - Git & GitHub
+## About The Project
+This is my personal portfolio website created to showcase my academic background, technical skills, projects, experience, resume and contact information. The website is responsive and designed for desktop, tablet and mobile devices.
 
- 💻 Web Development Trainee @Codomax Digital Solutions
-       Skills:
-        - HTML5
-        - CSS3
-        - JavaScript
-        - Git
-        - GitHub
-        - Responsive Web Design
-        
-      Projects:
-        - Portfolio Website
-        - Contact Form Validation Project
-        - Responsive Landing Pages
+## Live Website
+https://lglithika3-cpu.github.io/portfolio-website/
 
-
-      Connect with Me
-        LinkedIn: [https://www.linkedin.com/in/lithika-leyones-994b14399?utm_source=share_via&utm_content=profile&utm_medium=member_android]
-        GitHub:   [https://github.com/lglithika3-cpu]
+## Features
+- Responsive portfolio design
+- Home section
+- About section
+- Skills section
+- Education section
+- Projects section
+- Experience section
+- Resume download
+- Contact form
+- Form validation
+- Social media links
+- Smooth scrolling
+- Hover effects
+- CSS animations
+- Responsive mobile design
+  
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- GitHub Pages
+  
+## Project Structure
+portfolio-website/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── images/
+└── resume/
