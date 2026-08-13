@@ -1,20 +1,33 @@
+const contactForm=document.getElementById("contactForm");
+const formMessage=document.getElementById("formMessage");
 const topButton=document.getElementById("topButton");
-window.addEventListener("scroll",()=>{
+contactForm.addEventListener("submit",function(event){
+event.preventDefault();
+const name=document.getElementById("name").value.trim();
+const email=document.getElementById("email").value.trim();
+const message=document.getElementById("message").value.trim();
+if(name===""||email===""||message===""){
+formMessage.textContent="Please fill in all fields.";
+formMessage.style.color="red";
+return;
+}
+const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!emailPattern.test(email)){
+formMessage.textContent="Please enter a valid email address.";
+formMessage.style.color="red";
+return;
+}
+formMessage.textContent="Thank you! Your message has been submitted successfully.";
+formMessage.style.color="green";
+contactForm.reset();
+});
+window.addEventListener("scroll",function(){
 if(window.scrollY>300){
 topButton.style.display="block";
 }else{
 topButton.style.display="none";
 }
 });
-topButton.addEventListener("click",()=>{
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-});
-const contactForm=document.getElementById("contactForm");
-contactForm.addEventListener("submit",(event)=>{
-event.preventDefault();
-alert("Thank you for contacting me!");
-contactForm.reset();
+topButton.addEventListener("click",function(){
+window.scrollTo({top:0,behavior:"smooth"});
 });

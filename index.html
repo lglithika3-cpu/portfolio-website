@@ -9,110 +9,95 @@
 <body>
 <header>
 <nav>
-<h1>LITHIKA L G</h1>
+<h2>LITHIKA L G</h2>
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#education">Education</a></li>
-<li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
-<li><a href="#resume">Resume</a></li>
+<li><a href="#experience">Experience</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </header>
 <main>
 <section id="home" class="hero">
+<div class="hero-content">
 <img src="images/profile.jpeg" alt="LITHIKA L G">
-<h2>Hello, I'm LITHIKA L G</h2>
-<h3>B.E Computer Science and Engineering Student</h3>
-<p>Passionate about programming, web development and building practical technology solutions.</p>
-<a href="#about" class="button">Explore My Portfolio</a>
+<h1>LITHIKA L G</h1>
+<h2>B.E. Computer Science and Engineering Student</h2>
+<p>Passionate about software development, web technologies and continuous learning.</p>
+<div class="buttons">
+<a href="#projects" class="btn">View Projects</a>
+<a href="resume/resume.pdf" class="btn" download>Download Resume</a>
+</div>
+</div>
 </section>
 <section id="about">
 <h2>About Me</h2>
-<p>I am a Computer Science and Engineering student with an interest in software development, web technologies and problem solving. I enjoy learning new technologies and creating useful applications that combine creativity with technical skills.</p>
+<div class="section-content">
+<p>I am a B.E. Computer Science and Engineering student interested in software development and modern web technologies. I enjoy learning new technologies, solving programming problems and building practical projects.</p>
+<p>My goal is to develop strong technical skills and create useful software solutions through continuous learning and hands-on experience.</p>
+</div>
 </section>
 <section id="skills">
-<h2>Skills</h2>
-<div class="skills-container">
-<div class="skill-card">
-<h3>Programming</h3>
-<p>C</p>
-<p>Python</p>
-<p>Java</p>
-</div>
-<div class="skill-card">
-<h3>Web Development</h3>
-<p>HTML</p>
-<p>CSS</p>
-<p>JavaScript</p>
-</div>
-<div class="skill-card">
-<h3>Database</h3>
-<p>SQL</p>
-</div>
-<div class="skill-card">
-<h3>Tools</h3>
-<p>Git</p>
-<p>GitHub</p>
-<p>VS Code</p>
-</div>
+<h2>My Skills</h2>
+<div class="cards">
+<div class="card"><h3>Programming</h3><p>C, Python, Java</p></div>
+<div class="card"><h3>Web Development</h3><p>HTML5, CSS3, JavaScript</p></div>
+<div class="card"><h3>Database</h3><p>SQL and Database Fundamentals</p></div>
+<div class="card"><h3>Tools</h3><p>Git, GitHub, VS Code</p></div>
 </div>
 </section>
 <section id="education">
 <h2>Education</h2>
-<div class="education-card">
-<h3>B.E Computer Science and Engineering</h3>
+<div class="cards">
+<div class="card">
+<h3>B.E. Computer Science and Engineering</h3>
 <p>St. Xavier's Catholic College of Engineering</p>
 <p>2023 - 2027</p>
-</div>
-</section>
-<section id="experience">
-<h2>Experience</h2>
-<div class="experience-container">
-<div class="experience-card">
-<h3>Python Full Stack Development Intern</h3>
-<h4>Alric Infotech Pvt. Ltd.</h4>
-<p>Developed practical knowledge of Python programming, web development and full stack application development. Worked on building web-based solutions and improved problem-solving skills through hands-on development activities.</p>
-</div>
-<div class="experience-card">
-<h3>Portfolio Development</h3>
-<h4>Personal Project</h4>
-<p>Designed and developed a responsive personal portfolio website using HTML, CSS and JavaScript. Implemented sections for skills, education, experience, projects, resume and contact information.</p>
 </div>
 </div>
 </section>
 <section id="projects">
-<h2>Projects</h2>
-<div class="projects-container">
-<div class="project-card">
-<h3>Online Learning Platform</h3>
-<p>A web-based learning platform created using HTML to organize learning resources and provide a simple user-friendly interface.</p>
+<h2>My Projects</h2>
+<div class="cards">
+<div class="card">
+<h3>Personal Portfolio Website</h3>
+<p>A responsive personal portfolio website developed using HTML, CSS and JavaScript to showcase my skills, education, projects, experience and contact information.</p>
 </div>
-<div class="project-card">
+<div class="card">
 <h3>SafeMesh</h3>
-<p>An emergency safety application concept designed to help users send SOS alerts with location information to emergency contacts.</p>
+<p>An emergency safety Android application designed to send SOS alerts and location information to emergency contacts using mobile and nearby-device communication technologies.</p>
 </div>
 </div>
 </section>
-<section id="resume">
-<h2>Resume</h2>
-<p>Download my latest resume to learn more about my education, technical skills, projects and experience.</p>
-<a href="resume.pdf" download="resume.pdf" class="button">Download Resume</a>
+<section id="experience">
+<h2>Experience</h2>
+<div class="cards">
+<div class="card">
+<h3>Python Full Stack Development Intern</h3>
+<p>Alric Infotech Pvt. Ltd.</p>
+<p>Worked on web development concepts, Python programming and practical software development activities.</p>
+</div>
+</div>
 </section>
 <section id="contact">
 <h2>Contact Me</h2>
+<div class="contact-container">
 <form id="contactForm">
 <input type="text" id="name" placeholder="Your Name" required>
 <input type="email" id="email" placeholder="Your Email" required>
 <textarea id="message" placeholder="Your Message" required></textarea>
-<button type="submit" class="button">Send Message</button>
+<button type="submit" class="btn">Send Message</button>
+<p id="formMessage"></p>
 </form>
 <div class="social-links">
-<a href="https://www.linkedin.com/in/lithika-leyones-994b14399?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
 <a href="https://github.com/lglithika3-cpu/portfolio-website" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/lithika-leyones-994b14399?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+<a href="mailto:lithikalg3@gmail.com">Email</a>
+</div>
 </div>
 </section>
 </main>
